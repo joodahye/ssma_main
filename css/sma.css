@@ -1,167 +1,171 @@
-@charset "utf=8";
-*{
-	margin:0;
-	border:0;
-	box-sizing:border-box;
+@charset "utf-8";
+* {
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
 }
-html,body{
-	scroll-behavior:smooth;
-	font:10pt/180% 'Noto Sans KR', sans-serif;background:black;
+html, body {
+	scroll-behavior: smooth;
+	font: 10pt/180% 'Noto Sans KR', sans-serif; 
+	background: black;
 }
-a{
-	text-decoration:none;
-	color:white;
-	display:block;
+a {
+	text-decoration: none;
+	color: white;
+	display: block;
 }
-img{
-	display:block;
-	max-width:100%;
+img {
+	display: block;
+	max-width: 100%;
 }
-hr{
-	height:1px;
-	background:white;
-	border:none;
+hr {
+	height: 1px;
+	background: white;
+	border: none;
 }
-#layout{
-	max-width:500px;
-	margin:auto;
-	position:relative;
-	color:white;
-	opacity:1;
+#layout {
+	max-width: 500px;
+	margin: auto;
+	position: relative;
+	color: white;
+	opacity: 1;
 	animation: main 1s both;
 	overflow-x: hidden;
 }
-@keyframes main{
+@keyframes main {
 	from{
 					opacity:0;
-	}to{
+	}
+	to{
 					opacity:1;
 	}
 }
 
 /***header***/
-header{
-	width:100vw;
-	position:fixed;
+header {
+	max-width: 500px;
+	width: 100vw;
+	position: fixed;
 	background: black;
 	z-index: 1;
 }
-#head{
-	width:100%;
-	display:flex;
-	padding:10px;
-	align-items:center;
+#head {
+	width: 100%;
+	display: flex;
+	padding: 10px;
+	align-items: center;
 }
-#head img{
-	margin:auto;
-	transform:translateX(20px);
+#head img {
+	margin: auto;
+	transform: translateX(20px);
 }
-#head button{
-	color:white;
-	background:transparent;
-	border:none;
-	font-size:2rem;
+#head button {
+	color: white;
+	background: transparent;
+	border: none;
+	font-size: 2rem;
 }
-#head button span{
-	font-size:4rem;
+#head button span {
+	font-size: 4rem;
 }
 
 /***search***/
-#search{
-	width:100%;
-	border-bottom:1px solid white;
-	border-top:1px solid white;
-	display:flex;
-	padding:10px;
+#search {
+	width: 100%;
+	border-bottom: 1px solid white;
+	border-top: 1px solid white;
+	display: flex;
+	padding: 10px;
 }
-#search input{
-	flex:5;
-	margin-left:60px;
+#search input {
+	flex: 5;
+	margin-left: 60px;
 	background: transparent;
-	color:white;
+	color: white;
 	opacity: 0.5;
 	font-size: 1.5rem;
 	font-weight: lighter;
 }
-#search a{
-	flex:1;
-	font-size:2rem;
-}
-/***menu***/
-#menu{
-	position:fixed;
-	z-index: 1;
-	background: white;
-	width:80%;
-	height:100%;
-	right:-80%;
-	color:black;
-}
-#menu a{
-	color:black;
-}
-#menu button{
-	margin-top:2vh;
-	float:right;
-	margin-right:10vw;
-	background: transparent;
-	border:none;
-}
-#menu button span{
-	font-size: 4rem;
-}
-#navTop{
-	margin-top: 10.5vh;
-}
-#navTop ul{
-	padding-left: 0;
-	list-style: none;
-	list-style-position:outside;
-}
-#navTop ul li{
-	padding:4vh 10vw;
-	border-top:1px solid gray;
-}
-#navTop ul li:last-child{
-	border-bottom:1px solid gray;
-}
-#navTop ul li>a{
+#search a {
+	flex: 1;
 	font-size: 2rem;
 }
-#insideNav{
+
+/***menu***/
+#menu {
+	position: fixed;
+	z-index: 1;
+	background: white;
+	width: 80%;
+	height: 100%;
+	right: -80%;
+	color: black;
+}
+#menu a {
+	color: black;
+}
+#menu button {
 	margin-top: 2vh;
-	font-size:1.5rem;
+	float: right;
+	margin-right: 10vw;
+	background: transparent;
+	border: none;
+}
+#menu button span {
+	font-size: 4rem;
+}
+#navTop {
+	margin-top: 10.5vh;
+}
+#navTop ul {
+	padding-left: 0;
+	list-style: none;
+	list-style-position: outside;
+}
+#navTop ul li {
+	padding:4vh 10vw;
+	border-top: 1px solid gray;
+}
+#navTop ul li:last-child {
+	border-bottom: 1px solid gray;
+}
+#navTop ul li > a {
+	font-size: 2rem;
+}
+#insideNav {
+	margin-top: 2vh;
+	font-size: 1.5rem;
 	line-height: 160%;
 	text-align: center;
 	display: none;
 }
-#navBottom{
-	margin-top:5vh;
+#navBottom {
+	margin-top: 5vh;
 	padding-left: 10vw;
 	font-size: 1.5rem;
 }
-#navBottom a{
+#navBottom a {
 	display: inline-block;
-	margin-top:3.5vh;
+	margin-top: 3.5vh;
 }
 #navBottom a:hover {
-	color:gray;
+	color: gray;
 	border-bottom: 1px solid gray;
 }
 
 
 /***main***/
 /***main미술관이름***/
-main{
-	padding-top:155px;
-	padding-bottom:80px;
+main {
+	padding-top: 155px;
+	padding-bottom: 80px;
 }
-.circle{
-	position:absolute;
-	border:1px solid white;
+.circle {
+	position: absolute;
+	border: 1px solid white;
 	border-radius: 50%;
 	line-height: 100%;
-	padding:5px 10px;
+	padding: 5px 10px;
 	margin-left: 2vw;
 	font-size: 0.9rem;
 	text-align: center;
@@ -169,15 +173,15 @@ main{
 	opacity: 0.5;
 	font-weight: lighter;
 }
-.circle:nth-child(2){
-	right:0;
-	top:400px;
+.circle:nth-child(2) {
+	right: 0;
+	top: 400px;
 }
-.circle:nth-child(3){
-	top:800px;
+.circle:nth-child(3) {
+	top: 800px;
 }
-#museum{
-	width:80vw;
+#museum {
+	width: 80vw;
 	margin: auto;
 	display: flex;
 	flex-wrap: wrap;
@@ -185,79 +189,82 @@ main{
 	justify-content: space-between;
 	line-height: 200%;
 }
-#museum h2{
-	padding:3vw;
+#museum h2 {
+	padding: 3vw;
 	text-align: center;
 	font-weight: 400;
 	font-size: 1.8rem;
 	line-height: 140%;
 }
+
 /***전시회포스터***/
-#exhibition{
+#exhibition {
 	display: flex;
 	align-items: flex-end;
-	width:950px;
+	width: 950px;
 	margin-top: 150px;
 	margin-bottom: 100px;
-	position:relative;
-	left:-270px;
+	position: relative;
+	left: -270px;
 }
-#exhibition a{
-	width:190px;
-	height:300px;
-	padding-left:15px;
-  padding-right:15px;
-	display:block;
-	transition:0.5s;
+#exhibition a {
+	width: 190px;
+	height: 300px;
+	padding-left: 15px;
+  	padding-right: 15px;
+	display: block;
+	transition: 0.5s;
 }
-#exhibition img{
-	width:85%;
-	height:73%;
-	margin:auto;
-	display:block;
-}
-#exhibition a.big{
-	padding-bottom:30px;
-	transform:scale(1.5);
-}
-/***스페셜전시***/
-#specialBox{
-	width:300%;
-	height:500px;
+#exhibition img {
+	width: 85%;
+	height: 73%;
 	margin: auto;
-	line-height: 130%;
-	margin-top:-70px;
-	overflow-y:hidden;
+	display: block;
 }
-.special{
-	width:100vw;
-	height:500px;
-	padding:0 10vw;
+#exhibition a.big {
+	padding-bottom: 30px;
+	transform: scale(1.5);
 }
 
-.specialText{
+/***스페셜전시***/
+#specialBox {
+	width: 300%;
+	height: 500px;
+	margin: auto;
+	line-height: 130%;
+	margin-top: -70px;
+	overflow-y: hidden;
+}
+.special {
+	width: 100vw;
+	height: 500px;
+	padding: 0 10vw;
+}
+.specialText {
 	margin-top: 15px;
 	margin-bottom: 40px;
 }
-.time{
+.time {
 	display: flex;
 	font-size: 0.9rem;
 	justify-content: space-between;
 }
-h3{
+h3 {
 	font-size: 1.1rem;
 }
+
 /*하단*/
-footer{
+footer {
 	position: fixed;
-	width:100vw;
-	bottom:0;
+	max-width: 500px;
+	width: 100vw;
+	bottom: 0;
 	display: flex;
-	border-top:1px solid white;
+	border-top: 1px solid white;
 	justify-content: space-around;
 	background: black;
 }
-footer a{
-	width:45px;
+footer a {
+	width: 45px;
 	margin: 20px;
 }
